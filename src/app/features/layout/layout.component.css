@@ -1,0 +1,80 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nav-mvcc {
+  background-color: #790647;
+  color: #B5C2B7;
+  padding: 2px;
+}
+
+.nav-mvcc .navbar-brand {
+  margin-left: 15px;
+  color: #E2C391;
+}
+
+.nav-mvcc .navbar-brand span {
+  font-size: 1.3em;
+}
+
+.nav-item a {
+  color: #E2C391;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 52px;
+  border: 1px solid red;
+}
+
+/* source: https://ricostacruz.com/til/css-media-query-breakpoints */
+/* mobile portrait base < 480px */
+
+/* mobile landscape and up */
+@media screen and (min-width: 480px) {
+  .nav-mvcc {
+    padding: 4px;
+  }
+
+  .main-body {
+    padding-top: 56px;
+  }
+}
+
+/* Tablet portrait and up */
+@media screen and (min-width: 768px) {
+  .nav-mvcc {
+    padding: 8px;
+  }
+
+  .main-body {
+    padding-top: 64px;
+  }
+}
+
+/* Tablet landscape and up */
+@media screen and (min-width: 992px) {
+  .nav-mvcc {
+    padding: 10px;
+  }
+
+  .main-body {
+    padding-top: 68px;
+  }
+}
+
+
+/* Laptops and larger */
+@media screen and (min-width: 1200px) {
+  .nav-mvcc {
+    padding: 15px;
+  }
+
+  .main-body {
+    padding-top: 78px;
+  }
+}
