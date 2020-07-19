@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -8,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class LayoutComponent implements OnInit {
   isMenuCollapsed: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
     this.isMenuCollapsed = true;
   }
 
   ngOnInit(): void {
+  }
+
+  clickSendDonation() {
+    this.router.navigate(['/donate']);
   }
 
 }

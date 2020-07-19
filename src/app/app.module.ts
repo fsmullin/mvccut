@@ -13,6 +13,11 @@ import {
   faEye,
   faHeart } from '@fortawesome/free-solid-svg-icons';
 
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+} from '@fortawesome/free-brands-svg-icons';
+
 import { CoreModule } from './core/core.module';
 import { FeaturesModule } from './features/features.module';
 
@@ -34,5 +39,6 @@ import { FeaturesModule } from './features/features.module';
 export class AppModule {
   constructor(private library: FaIconLibrary) {
     library.addIcons(faBars, faChurch, faFire, faEye, faHeart);
+    library.addIcons(faFacebookSquare, faInstagramSquare);
   }
 }

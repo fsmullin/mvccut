@@ -38,6 +38,32 @@
 }
 
 /*---------------------
+	Helper CSS
+-----------------------*/
+.section-title {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.section-title.title-left {
+	text-align: left;
+}
+
+.section-title span {
+	font-size: 16px;
+	font-weight: 700;
+	color: #dd3e3e;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.section-title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*---------------------
 	Hero Section
 -----------------------*/
 .hero-section {
@@ -132,6 +158,248 @@
 
 .service-box .s-readmore i {
 	color: #790647;
+}
+
+
+/*---------------------
+	Sermon Section
+-----------------------*/
+.sermon-section {
+	padding-bottom: 0;
+}
+
+.sermon-warp {
+	background: #f6f8f9;
+	position: relative;
+}
+
+.sermon-left-bg {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.sermon-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 70px;
+}
+
+.sermon-content h2 {
+	margin-bottom: 30px;
+}
+
+.sermon-info {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.sermon-info li {
+	font-size: 18px;
+	font-family: "Lora", serif;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.sermon-info li span {
+	color: #dd3e3e;
+}
+
+.icon-links {
+	margin-top: 40px;
+}
+
+.icon-links a {
+	width: 48px;
+	height: 48px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	color: #000000;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+	padding-top: 12px;
+	-webkit-box-shadow: 0 0 0px 2px #f0f1f1;
+	        box-shadow: 0 0 0px 2px #f0f1f1;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	margin-top: 10px;
+}
+
+.icon-links a:hover {
+	background: #dd3e3e;
+	color: #fff;
+}
+
+.video-col {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio, source: https://faq.dailymotion.com/hc/en-us/articles/360022841393-How-to-preserve-the-player-aspect-ratio-on-a-responsive-page */
+}
+
+.video-col iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------
+	Donate Section
+-----------------------*/
+.donate-section {
+	position: relative;
+  background-position: center center;
+  background-image: url('/assets/images/oghs-covid-background.png');
+}
+
+.donate-section .container {
+	position: relative;
+	z-index: 1;
+}
+
+.donate-section:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.65;
+}
+
+.donate-content {
+	padding-right: 0;
+}
+
+.donate-content h2 {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.donate-content p {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.donate-content img {
+  width: 100%;
+  height: auto;
+}
+.donate-info {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.donate-info li {
+	font-size: 18px;
+	font-family: "Lora", serif;
+	font-style: italic;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.donate-info li span {
+	color: #dd3e3e;
+}
+
+.donate-card {
+	padding: 40px 50px;
+	background: #fff;
+	border-radius: 4px;
+}
+
+/* Tablet portrait and up */
+@media screen and (min-width: 768px) {
+  .donate-card {
+    margin-left: 30px;
+  }
+}
+
+.donate-card h2 {
+	font-weight: 700;
+	color: #dd3e3e;
+	margin-bottom: 60px;
+}
+
+.donate-card h2 span {
+	font-family: "Lora", serif;
+	color: #636363;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.donate-card .donate-progress-bar {
+	display: block;
+	width: 100%;
+	height: 10px;
+	background: #ebebeb;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.donate-card .donate-progress-bar .pb-inner {
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	left: 0;
+	top: 0;
+	background: #dd3e3e;
+}
+
+.donate-card .donate-progress-bar .pb-inner span {
+	position: absolute;
+	width: 48px;
+	height: 22px;
+	top: -35px;
+	right: -24px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 2px;
+	background: #252525;
+}
+
+.donate-card .donate-progress-bar .pb-inner span:after {
+	position: absolute;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background: #252525;
+	bottom: -3px;
+	left: 21px;
+	-webkit-transform: rotate(47deg);
+	    -ms-transform: rotate(47deg);
+	        transform: rotate(47deg);
+}
+
+.donate-progress-info {
+	display: block;
+	margin-bottom: 60px;
+	font-size: 14px;
+	color: #636363;
+}
+
+.donate-progress-info span {
+	color: #252525;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.donate-progress-info .di-left {
+	float: left;
+}
+
+.donate-progress-info .di-right {
+	float: right;
 }
 
 /*---------------------

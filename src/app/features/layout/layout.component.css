@@ -19,6 +19,11 @@
   font-size: 1.3em;
 }
 
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .nav-item a {
   color: #E2C391;
 }
@@ -29,6 +34,24 @@
   flex-grow: 1;
   padding-top: 52px;
   border: 1px solid red;
+}
+
+/* Buttons */
+.site-btn {
+	padding: 14px 23px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+	background: #E2C391;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.nav-item .site-btn {
+	color: #790647;
 }
 
 /* source: https://ricostacruz.com/til/css-media-query-breakpoints */

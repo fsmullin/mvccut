@@ -6,6 +6,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { OGHSComponent } from './oghs/oghs.component';
+import { DonateComponent } from './donate/donate.component';
 
 
 
@@ -13,6 +15,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     LayoutComponent,
     HomeComponent,
+    OGHSComponent,
+    DonateComponent,
   ],
   imports: [
     CommonModule,
