@@ -37,6 +37,17 @@
 	letter-spacing: 2px;
 }
 
+.site-btn-blur {
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backgrop-filter: none) {
+  .site-btn-blur {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
 /*---------------------
 	Helper CSS
 -----------------------*/
