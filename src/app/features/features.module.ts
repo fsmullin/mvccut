@@ -8,7 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { OGHSComponent } from './oghs/oghs.component';
 import { DonateComponent } from './donate/donate.component';
-
+import { MembersComponent } from './members/members.component';
+import { SermonComponent } from './members/components/sermon/sermon.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { QuillModule } from 'ngx-quill';
+import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
@@ -17,12 +21,17 @@ import { DonateComponent } from './donate/donate.component';
     HomeComponent,
     OGHSComponent,
     DonateComponent,
+    MembersComponent,
+    SermonComponent,
   ],
   imports: [
     CommonModule,
     NgbModule,
     FontAwesomeModule,
     RouterModule,
+    ReactiveFormsModule,
+    QuillModule,
+    CoreModule
   ]
 })
 export class FeaturesModule { }

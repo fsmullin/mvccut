@@ -259,6 +259,11 @@
   height: 100%;
 }
 
+.sermon-video {
+  width: calc(734px*0.70);
+  height: calc(479px*0.70);
+}
+
 /*---------------------
 	Donate Section
 -----------------------*/
